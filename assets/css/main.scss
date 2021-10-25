@@ -1,0 +1,139 @@
+// SETTINGS 
+*{
+    margin: 0;
+    padding: 0;
+
+}
+// FONT REFRENCES 
+@font-face {
+    font-family: mainFont;
+    src: url(../font/Roboto-Medium.ttf);
+  }
+body{
+    background-image: url('../img/bg2.jpg');
+    // background-image: url('../assets/img/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh ;
+    font-family: mainFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.container{
+    text-align: center;
+}
+#cityName{
+    font-weight: 100;
+    margin-top: 3rem;
+    font-size: 35px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-size: 14px;
+        color: #000;
+        border-radius: 50px;
+        padding: .3rem .5rem;
+        background-color: #fff;
+        margin-left: .5rem;
+    }
+}
+.dateOfWeek{
+    opacity: .8;
+    margin: .5rem 0;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.updateTime{
+    font-size: 13px;
+    position: fixed;
+    bottom: 20px;
+    opacity: .7;
+    font-weight: 100;
+}
+.content{
+    margin-top: 7rem;
+    font-size: 55px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 100px;
+    }
+    #temptureFr{
+        display: none;
+    }
+
+    .status{
+        font-size: 25px;
+        opacity: .8;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-top: 1rem;
+    }
+}
+.searchBox{
+    position: absolute;
+    top: 3.5rem;
+    right: 4rem;
+    display: flex;
+
+    .searchBtn{
+        width: 40px;
+        cursor: pointer;
+    }
+    input{
+        border-radius: 25px;
+        border: none;
+        margin-right: 1rem;
+        padding: .5rem 1rem;
+        outline: none;
+        font-size: 12px;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all .30s ease-in-out;
+    }
+}
+
+.changetoF{
+    position: fixed;
+    top: 3.5rem;
+    left: 4rem;
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all .30s ease-in-out;
+    &:hover{
+        opacity: 1;
+    }
+    input{
+        margin-right: .7rem;
+    }
+}
+
+#searchCheckBox:checked ~ .searchBox input{
+    opacity: .9;
+    transform: translateY(0);
+}
+#changetoF:checked ~ .content #temptureCg{
+    display: none;
+}
+#changetoF:checked ~.content #temptureFr{
+    display: block;
+}
+
+
+// made by amirmahdi kaheh https://ir.linkedin.com/in/amirmahdi-kaheh-1b65291a6

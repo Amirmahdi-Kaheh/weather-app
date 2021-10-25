@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JS FILE -->
+    <script src="assets/js/main.js"></script>
+    <title>Weather app</title>
+</head>
+
+<body>
+    
+    <label for="changetoF" class="changetoF">Fahrenheit / Cilicious</label>
+    <div class="container">
+        <h3 id="cityName">Mashhad</h3>
+        <p class="dateOfWeek">Sunday</p>
+        <p class="updateTime">Updated at 12:48</p>
+        
+        <div class="content">
+            <p class="temptureNumber" id="temptureCg">20 C</p>
+            <p class="temptureNumber" id="temptureFr">45 F</p>
+            
+            <p class="status">sunny</p>
+        </div>
+    </div>
+    
+    <input type="checkbox" name="" id="searchCheckBox" hidden>
+    <div class="searchBox">
+        <input type="text" placeholder="City Name + Enter" class="cityName" id="city">
+        <label for="searchCheckBox"><img src="assets/img/search.png" alt="" srcset="" class="searchBtn"></label>
+    </div>
+
+</body>
+
+</html>
+
+<!-- made by amirmahdi kaheh https://ir.linkedin.com/in/amirmahdi-kaheh-1b65291a6 -->
